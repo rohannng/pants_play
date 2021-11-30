@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import pex
 
 
 def print_utils():
@@ -12,3 +13,6 @@ def pandas_utils():
 
 def numpy_utils():
     return np.arange(15).reshape(3, 5)
+
+def pex_utils():
+    return pex.__version__

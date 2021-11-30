@@ -1,4 +1,4 @@
-from alphacommon.alphacommon import utils
+from alphacommon import utils
 import pandas as pd
 import numpy as np
 
@@ -13,5 +13,10 @@ def test_pandas_utils():
 
 
 def test_numpy_utils():
-    print ( utils.numpy_utils())
+    print(utils.numpy_utils())
     np.testing.assert_array_equal(utils.numpy_utils(), np.arange(15).reshape(3, 5))
+
+
+def test_pex_utils():
+    print(utils.pex_utils())
+    assert utils.pex_utils() == "2.1.56"
